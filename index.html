@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Chasy;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+ max-width: 1000px;
+ position: relative;
+ margin: auto;
+}
+/* Caption text */
+.text {
+ color: #80bfff;
+ font-size: 30px;
+ padding: 8px 12px;
+ position: absolute;
+ bottom: 8px;
+ width: 100%;
+ text-align: center;
+}
+/* Number text (1/15 etc) */
+.numbertext {
+ color: #B80371;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 10;
+}
+/* The dots/bullets/indicators */
+.dot {
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: #2951A2;
+ border-radius: 50%;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+}
+.active {
+ background-color: #EE1C98;
+}
+/* Fading animation */
+.fade {
+ -webkit-animation-name: fade;
+ -webkit-animation-duration: 1.5s;
+ animation-name: fade;
+ animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+@keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+ .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<center><h2><font size="9">SENIORS 2020</font></h2>
+<br>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+ <div class="numbertext">1 / 15</div>
+ <img src="1.jpeg" style="width:70%">
+</div>
+
+  <div class="mySlides fade">
+ <div class="numbertext">2/ 15</div>
+ <img src="2.jpeg" style="width:70%">
+</div>
+
+  <div class="mySlides fade">
+ <div class="numbertext">3 / 15</div>
+ <img src="3.jpeg" style="width:85%">
+</div>
+
+  <div class="mySlides fade">
+ <div class="numbertext">4 / 15</div>
+ <img src="4.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">5 / 15</div>
+ <img src="5.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">6 / 15</div>
+ <img src="6.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">7 / 15</div>
+ <img src="7.jpg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">8/ 15</div>
+ <img src="8.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">9 / 15</div>
+ <img src="9.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">10 / 15</div>
+ <img src="10.jpg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">11 / 15</div>
+ <img src="11.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">12 / 15</div>
+ <img src="12.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">13 / 15</div>
+ <img src="13.jpg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">14 / 15</div>
+ <img src="14.jpeg" style="width:85%">
+</div>
+
+ <div class="mySlides fade">
+ <div class="numbertext">15 / 15</div>
+ <img src="15.jpeg" style="width:85%">
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+</div>
+
+<center><p><font size="6"><strong>
+Your time is limited, don’t waste it living someone else’s life. 
+Don’t be trapped by dogma, which is living the result of other people’s thinking.
+Don’t let the noise of other’s opinion drown your own inner voice. And most important,
+have the courage to follow your heart and intuition, they somehow already know what you 
+truly want to become. Everything else is secondar
+-Steve Jobs-</center></strong><br></p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ for (i = 0; i < slides.length; i++) {
+ slides[i].style.display = "none";
+ }
+ slideIndex++;
+ if (slideIndex > slides.length) {slideIndex = 1}
+ for (i = 0; i < dots.length; i++) {
+ dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+ setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</div>  
+ <div class="fixed-footer"> 
+ 
+<div class="container">Copyright &copy; 2020 DESIRE BENDECK
+ 
+</div>           
+ 
+</html>
